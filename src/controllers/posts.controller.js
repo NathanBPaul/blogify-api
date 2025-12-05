@@ -56,3 +56,5 @@ module.exports.createPost = async function createPost(req, res) {
     return res.status(500).json({ success: false, message: 'Internal server error' });
   }
 };
+
+// Additional controller functions (updatePost, deletePost, etc.) would follow the same pattern.
