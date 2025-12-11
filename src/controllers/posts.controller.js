@@ -11,7 +11,6 @@ const postsService = require('../services/posts.service');
 module.exports.getAllPosts = async function getAllPosts(req, res) {
   try {
     const payload = await postsService.getAllPosts();
-
     return res.status(200).json({
       success: true,
       data: payload
